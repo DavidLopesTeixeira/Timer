@@ -1,0 +1,108 @@
+:root {
+    --color2: #f2f2f2;
+    --color3: #2ecc71;
+    --color4: #f1c40f;
+    --color5: #ffffff;
+    --color6: hwb(185 50% 45% / 0.4);
+    --color7: #e74c3c;
+    --color8: #0A131A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", sans-serif;
+}
+
+body {
+    background-color: var(--color8);
+}
+
+.title {
+    color: var(--color2);
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 84px;
+}
+
+
+.clock {
+    width: 512px;
+    height: 384px;
+    background-color: var(--color6);
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.container-timer {
+    margin-top: 163px;
+    display: flex;
+    align-items: center;
+
+}
+
+.container-timer img {
+    margin-right: 8px;
+}
+
+.timer {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--color5);
+
+}
+
+.pause-action {
+    color: var(--color4);
+}
+
+
+
+.buttons {
+    margin-top: 44px;
+}
+
+.buttons button {
+    border: none;
+    padding: 8px 12px;
+    font-size: 24px;
+    margin-right: 8px;
+    font-weight: bold;
+    color: var(--color5);
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all ease .5s;
+    opacity: 1;
+}
+
+.buttons button:hover {
+    opacity: .9;
+    transform: scale(.8);
+
+}
+
+.start {
+    background-color: var(--color3);
+}
+
+.pause {
+    background-color: var(--color4);
+}
+
+.stop {
+    background-color: var(--color7);
+}
